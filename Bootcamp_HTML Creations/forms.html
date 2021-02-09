@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    
+    <form action="/tacos">
+        <p>
+        <label for="username">Enter a Username:</label>
+        <input id="username" type="text" placeholder="Username" name="username">
+        </p>
+        <p>
+        <label for="password">Enter a Password:</label>
+        <input id="password" type="password" placeholder="Password" name="password">
+        </p>
+        <p>
+        <label for="color">Favorite Color</label>
+        <input id="color" type="color" name="color">
+        </p>
+        <p>
+        <label for="number">Enter a Number:</label> 
+        <input id="number" type="number" placeholder="enter a number" name="num" min="0" max="100">
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>Hijacking Searches</h1>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q" id="">
+        <button>Search Reddit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="q">
+        <button>Search YouTube</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="meal">Please Select Entree</label>
+            <select name="meal" id="meal">
+                <option value="steak" selected>Steak</option>
+                <option value="chicken">Chicken</option>
+                <option value="veg">Vegetarian</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="0" max="100" value="75" name="cheese_level">
+        </p>
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <textarea name="requests" id="requests" cols="30" rows="5" placeholder="Special Type"></textarea>
+        </p>
+        <button>Submit</button>
+
+        <h2>Validations Demo</h2>
+        <form action="/dummy">
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" minlength="5" maxlength="10" required>
+            </p>
+
+            <p>
+                <input type="email" required>
+                <input type="url">
+            </p>
+
+            <button>Submit</button>
+        </form>
+    </form>
+
+    <hr>
+
+    <h1>Race Registration!</h1>
+    <form action="/race">
+        <label for="first">First Name</label>
+        <input type="text" name="first" id="first" required>
+        <label for="last">Last Name</label>
+        <input type="text" name="last" id="last" required>
+
+        <h4>Select a Race:</h4>
+        <div>
+        <input type="radio" name="race_type" id="race_type">
+        <label for="race_type">Fun Run 5k</label>
+        </div>
+        <div>
+        <input type="radio" name="race_type" id="race_type">
+        <label for="race_type">Half Marathon</label>
+        </div>
+        <div>
+        <input type="radio" name="race_type" id="race_type">
+        <label for="race_type">Full Marathon</label>
+        </div>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+
+        <div>
+        <label for="age_group">Select Age Group</label>
+        <select name="age_group" id="age_group">
+            <option value="group1" selected>under 18</option>
+            <option value="group2">19 - 35</option>
+            <option value="group3">36 - 66</option>
+        </select>
+        </div>
+        <button>Register!</button>
+    </form>
+
+</body>
+</html>

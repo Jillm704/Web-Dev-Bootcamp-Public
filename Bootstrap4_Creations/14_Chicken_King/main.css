@@ -1,0 +1,62 @@
+h2 {
+    display: inline-block;
+}
+
+.navbar-brand {
+    font-family: 'Bad Script', cursive;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+.text-center {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.466);
+    border-radius: 15px;
+}
+
+.textOnImage {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    color: #fff;
+    font-size: 30px;
+}
+
+#toprow {
+    padding: 20px 0;
+    background: #003444;
+}
+
+#bottomrow {
+    padding-bottom: 20px;
+    background: #003444;
+}
+
+#toprow img, #bottomrow img {
+    border: 1px solid #fff;
+    border-radius: 15px;
+}
+
+.call {
+    padding: 5px 0;
+    background: #00c3ff6c;
+}
+
+.footer {
+    background: #333;
+    color: white;
+}
+
+.footer p {
+    margin-top: 1.2rem;
+    margin-left: 10rem;
+}
+
+i {
+    margin: 1rem 1.5rem;
+}

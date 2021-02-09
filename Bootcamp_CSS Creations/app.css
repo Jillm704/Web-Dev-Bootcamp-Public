@@ -1,0 +1,22 @@
+h1 {
+	color: rgba(11, 111, 150, 0.8);
+	/*border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+
+	border: 2px solid purple;
+}
+
+/*width
+color
+style*/
+
+
+h4 {
+	background: rgb(255, 100, 80);
+}
+
+body {
+	background: no-repeat url(https://i.ytimg.com/vi/EknES9KcT4M/maxresdefault.jpg);
+	background-size: cover;
+}
